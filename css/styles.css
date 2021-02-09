@@ -448,6 +448,14 @@ nav li img {
       'casestudy4';
   }
 
+  .hide-to-1240 {
+    display: none;
+  }
+
+  .show-to-1240 {
+    display: default;
+  }
+
   .testimonial-profile-image {
     display: none;
   }
