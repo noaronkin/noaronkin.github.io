@@ -19,7 +19,7 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-
+    <link rel="shortcut icon" href="/img/icons/favicon.ico" />
     <link rel="stylesheet" type="text/css" href="./css/materialize.min.css" />
     <link rel="stylesheet" type="text/css" href="./css/styles.css" />
     <meta charset="UTF-8" />
@@ -27,12 +27,66 @@
     <title>Case studies | Noa Ronkin</title>
   </head>
   <body>
+    <ul id="case-studies-dropdown" class="dropdown-content">
+      <li>
+        <a href="case-studies-increase-website-pageviews.html">Website</a>
+      </li>
+      <li>
+        <a href="case-studies-grow-social-media-presence.html">Social media</a>
+      </li>
+      <li><a href="case-studies-improve-google-ranking.html">SEO</a></li>
+      <li>
+        <a href="case-studies-drive-reach-engagement-newsletters.html">Email</a>
+      </li>
+    </ul>
+    <ul id="nav-sidebar" class="sidenav bg-light-grey">
+      <li><a href="work.html">Work</a></li>
+      <li><a href="#!">Case studies</a></li>
+      <li>
+        <ul>
+          <li>
+            <a href="case-studies-increase-website-pageviews.html">Website</a>
+          </li>
+          <li>
+            <a href="case-studies-grow-social-media-presence.html"
+              >Social media</a
+            >
+          </li>
+          <li><a href="case-studies-improve-google-ranking.html">SEO</a></li>
+          <li>
+            <a href="case-studies-drive-reach-engagement-newsletters.html"
+              >Email</a
+            >
+          </li>
+        </ul>
+      </li>
+      <li><a href="testimonials.html">Testimonials</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li>
+        <a href="https://www.linkedin.com/in/nronkin" target="_blank"
+          ><img src="./img/icons/li-48.png" alt="LinkedIn" width="12%"
+        /></a>
+      </li>
+    </ul>
     <nav class="bg-casestudy">
       <div class="nav-wrapper">
         <div class="container">
           <a href="index.html" class="brand-logo">Noa Ronkin</a>
+          <a href="#" data-target="nav-sidebar" class="sidenav-trigger"
+            ><i class="material-icons">menu</i></a
+          >
           <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li><a href="work.html">Work</a></li>
+            <li>
+              <a
+                class="dropdown-trigger"
+                href="#!"
+                data-target="case-studies-dropdown"
+                >Case studies<i class="material-icons right"
+                  >arrow_drop_down</i
+                ></a
+              >
+            </li>
             <li><a href="testimonials.html">Testimonials</a></li>
             <li><a class="btn" href="contact.html">Contact</a></li>
             <li>
@@ -48,6 +102,7 @@
         </div>
       </div>
     </nav>
+
     <div class="hero bg-casestudy">
       <div class="container">
         <h5>Case study</h5>
@@ -221,8 +276,8 @@
       </div>
     </footer>
 
-    <script src="js/materialize.min.js"></script>
     <script src="js/jquery.min.js"></script>
+    <script src="js/materialize.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

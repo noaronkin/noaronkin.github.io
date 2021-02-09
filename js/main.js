@@ -77,4 +77,6 @@ $(document).ready(function () {
       $('#scroll-to-top').css('display', 'none');
     }
   }
+  $('.dropdown-trigger').dropdown();
+  $('.sidenav').sidenav();
 });
