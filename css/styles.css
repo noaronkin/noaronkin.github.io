@@ -408,6 +408,16 @@ nav li img {
   width: 100%;
 }
 
+.zoom {
+  transition: all .2s ease-in-out;
+}
+
+.zoom:hover {
+  transform: scale(1.5);
+  transition: scale 4s 0;
+  margin-bottom: 120px;
+}
+
 @media only screen and (max-width: 600px) {
   h1 {
     font-size: 2rem;
