@@ -24,6 +24,11 @@ $(document).ready(function () {
 
   function handleContactSubmit(e) {
     e.preventDefault();
+    
+    // send event info to GA
+    
+
+    // process submission
     const formEl = e.target;
     const formData = new FormData(formEl);
     const name = formData.get('name');
